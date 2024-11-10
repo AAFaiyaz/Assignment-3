@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7425c3ab84.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Daisy UI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
@@ -38,8 +43,93 @@
   </head>
   <body class="font-manrope">
     <!-- Header Section -->
-    <header class="md:container md:mx-auto">
-      <h1 class="text-6xl">Rinterio</h1>
+    <header
+      class="md:container md:mx-auto bg-gradient-to-b from-white to-white/0"
+    >
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow hover:bg-transparent"
+            >
+              <li>
+                <a class="">Homeds</a>
+              </li>
+              <li>
+                <a>Services</a>
+              </li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl hover:bg-transparent">Rintero</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="">
+              <a class="hover:bg-transparent hover:!text-black">Home</a>
+            </li>
+            <li>
+              <a>Services</a>
+            </li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-3">
+          <div>
+            <i class="fa-solid fa-magnifying-glass mr-4 p-3 bg-white"></i>
+          </div>
+          <div><i class="fa-solid fa-cart-shopping mr-4"></i></div>
+          <a class="btn bg-[#ABEF5F] text-black font-extrabold rounded-full"
+            >Book Consult
+            <i
+              class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#1C1C1C] rounded-full text-white"
+            ></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- banner -->
+      <div>
+        <img class="mx-auto mb-6" src="./assets/banner.png" alt="" />
+        <h1 class="text-3xl md:text-6xl font-extrabold mb-6 text-center">
+          A barn house of this design has<br />
+          a striking appearance
+        </h1>
+        <p class="text-sm md:text-md mb-6 text-center">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal<br />
+          accents, and large windows that flood the space with natural light.
+        </p>
+        <div class="text-center">
+          <a class="btn bg-[#ABEF5F]/50 text-black font-extrabold rounded-full"
+            >Book Consult
+            <i
+              class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F] rounded-full text-[#1C1C1C]"
+            ></i
+          ></a>
+        </div>
+      </div>
     </header>
     <!-- Main Section -->
     <main class="md:container md:mx-auto"></main>
